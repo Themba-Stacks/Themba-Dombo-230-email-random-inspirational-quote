@@ -1,5 +1,5 @@
 let quoteArray = require("./getQuote.js")
-const quotes = quoteArray("../src/inspirationalQuote.txt")
+const quotes = quoteArray("inspirationalQuote.txt")
 
 const SibApiV3Sdk = require('sib-api-v3-sdk');
 const defaultClient = SibApiV3Sdk.ApiClient.instance;

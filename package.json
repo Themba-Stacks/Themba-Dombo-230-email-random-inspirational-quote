@@ -1,0 +1,25 @@
+{
+  "name": "themba-dombo-230-email-random-inspirational-quote",
+  "version": "1.0.0",
+  "description": "create a random qoute generator",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "send_inspiration": "node ./src/send.js",
+    "secrets": "echo source smtp_secrets.sh"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Umuzi-org/Themba-Dombo-230-email-random-inspirational-quote.git"
+  },
+  "author": "Themba",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Umuzi-org/Themba-Dombo-230-email-random-inspirational-quote/issues"
+  },
+  "homepage": "https://github.com/Umuzi-org/Themba-Dombo-230-email-random-inspirational-quote#readme",
+  "dependencies": {
+    "sendinblue-apiv3": "^2.0.2",
+    "sib-api-v3-sdk": "^7.2.3"
+  }
+}

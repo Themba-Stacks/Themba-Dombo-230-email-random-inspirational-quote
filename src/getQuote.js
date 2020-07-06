@@ -11,3 +11,14 @@ function quoteArray(textFile) {
 };
 
 module.exports = quoteArray;
+
+
+
+
+
+
+
+// quotes[Math.floor(Math.random() * quotes.length)]
+// const email = process.argv[2];
+// let quoteArray = require("./getQuote.js")
+// const quotes = quoteArray("inspirationalQuote.txt")

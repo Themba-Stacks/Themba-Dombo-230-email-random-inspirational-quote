@@ -4,8 +4,8 @@
   "description": "create a random qoute generator",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "send_inspiration": "node ./src/send.js",
+    "test": "jasmine",
+    "send_inspiration": "node ./src/main.js",
     "secrets": "echo source smtp_secrets.sh"
   },
   "repository": {

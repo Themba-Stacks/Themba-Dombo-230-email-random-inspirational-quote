@@ -19,6 +19,6 @@ function sendEmailAPI(email, emailContent) {
     console.error(error);
   }
   );
-}
+};
 
 module.exports = sendEmailAPI;

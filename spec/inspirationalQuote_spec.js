@@ -1,10 +1,26 @@
 const quoteArray = require("../src/getQuote.js");
 const randomGenerator = require("../src/randomizer.js");
-const sendEmailAPI = require("../src/send.js");
+var emailer = require("../src/send.js");
 
-describe("getQuote", ()=>{
-    xit("should check that a file has been read and a array has been returned", ()=> {
+describe("getQuote function", ()=>{
+    it("should read a file and return a array", ()=> { //try mock the actual file used
         expect(quoteArray("inspirationalQuote.txt")).toBeInstanceOf(Array);
+    })
+});
+
+describe("randomGenerator function", ()=>{ //mock the inputs that you would use to run these test
+    it("should return a randomly selected item from a array", ()=> {
+        expect(randomGenerator([0,1,2,3])).not.toBeNull();
+    })
+});
+
+describe("senEmailAPI function", ()=>{
+    it("should send message", ()=> {
+        var email = emailer;
+        email.sendEmailAPI = jasmine.createSpy("sendEmailAPI spy")
+        //spyOn(email,"sendEmailAPI");
+        email.sendEmailAPI('themba@gmail.com','hello')
+        expect(email.sendEmailAPI).toHaveBeenCalled();
     })
 });
 
